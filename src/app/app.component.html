@@ -381,91 +381,6 @@
     </a>
   </div>
 
-  <!-- Next Steps -->
-  <h2>Next Steps</h2>
-
-
-  <div class="card-container">
-    <div
-    >
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-      </svg>
-
-      <span>New Component</span>
-    </div>
-
-    <div
-      class="card card-small"
-      (click)="selection.value = 'material'"
-      tabindex="0"
-    >
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-      </svg>
-
-      <span>Angular Material</span>
-    </div>
-
-    <div class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-
-      <span>Add PWA Support</span>
-    </div>
-
-    <div
-      class="card card-small"
-      (click)="selection.value = 'dependency'"
-      tabindex="0"
-    >
-      <svg
-        class="material-icons"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-
-      <span>Add Dependency</span>
-    </div>
-
-    <div
-      class="card card-small"
-      (click)="selection.value = 'build'"
-      tabindex="0"
-    >
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-
-      <span>Build for Production</span>
-    </div>
-  </div>
 
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
@@ -473,19 +388,7 @@
     <pre *ngSwitchCase="'dependency'">ng add _____</pre>
     <pre *ngSwitchCase="'build'">ng build --prod</pre>
   </div>
-
-  <!-- Links -->
-  <div class="card-container">
-          
-        
-
-    
-  </div>
-
-  <!-- Footer -->
-  <footer>
-  </footer>
-
+ 
   <div>
   <svg
     id="clouds"
