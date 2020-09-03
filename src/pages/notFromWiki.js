@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import ScrollMe from "../components/scrollToTheTop"
 
 export default function NotFromWiki({ data }) {
   console.log(data)
@@ -8,7 +7,6 @@ export default function NotFromWiki({ data }) {
   return (
     <Layout>
       <div>
-        <ScrollMe />
 
         <p>&emsp;
           The second (and main) layer of the narrative is the correspondence
