@@ -14,7 +14,8 @@ const ToggleTheme = () => {
       onClick={toggleTheme}
       css={css`
         float: right;
-        display: inline;
+        display: inline-block;
+        background-color: none;
       `}
     >
       <img src={theme === "light" ? moonIcon : sunIcon} alt={theme} />

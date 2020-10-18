@@ -1,5 +1,5 @@
 import { css } from "@emotion/core"
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"

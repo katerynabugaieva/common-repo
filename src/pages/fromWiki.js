@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import ScrollMe from "../components/scrollToTheTop"
 
 export default function FromWiki({ theme }) {
   console.log(theme)
@@ -7,6 +8,8 @@ export default function FromWiki({ theme }) {
   return (
       <Layout>
         <div>
+        <ScrollMe />
+
           <p>
           &emsp;S. is a 2013 novel written by Doug Dorst and conceived by J. J.
           Abrams. The novel is unusual in its format, presented as a story

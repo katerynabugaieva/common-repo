@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import ScrollMe from "../components/scrollToTheTop"
 
 export default function Development({ data }) {
   console.log(data)
@@ -7,6 +8,8 @@ export default function Development({ data }) {
   return (
     <Layout>
       <div>
+        <ScrollMe />
+
         <p>&emsp;
         S. is a collaboration between film producer J. J. Abrams, who came up
         with the concept for the book, and writer Doug Dorst. Abrams stated that

@@ -1,11 +1,11 @@
-import React, { useContext } from "react"
 import { css } from "@emotion/core"
-import { useStaticQuery, Link, graphql } from "gatsby"
-
-import { rhythm } from "../utils/typography"
-import { Wrapper } from "../styles/styles"
+import { graphql, Link, useStaticQuery } from "gatsby"
+import React, { useContext } from "react"
 import { ThemeContext } from "../providers/ThemeProvider"
+import { Wrapper } from "../styles/styles"
+import { rhythm } from "../utils/typography"
 import ToggleTheme from "./theme/ToggleTheme"
+
 
 export default function Layout({ children }) {
   const data = useStaticQuery(
@@ -24,6 +24,7 @@ export default function Layout({ children }) {
     <div>
       <Wrapper theme={theme}>
         <ToggleTheme />
+
         <Link to={`/`}>
           <h4
             css={css`

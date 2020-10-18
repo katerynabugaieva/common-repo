@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const ThemeToggleWrapper = styled.button`
   background: none;
@@ -22,11 +22,12 @@ export const ThemeToggleWrapper = styled.button`
   h1 {
     margin-bottom: 1rem;
     font-size: 26pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+    color: ${({ theme }) => (theme === "dark" ? "#fff" : "#212121")};
+    text-emphasis: ${({ theme }) => (theme === "dark" ? "87%" : "100%")};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      mix-blend-mode: ${({ theme }) =>
+        theme === "light" ? "unset" : "difference"};
     }
   }
-`;
-
+`

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
+import ScrollMe from "../components/scrollToTheTop"
 
 export default function BooksImagies({ data }) {
   console.log(data)
@@ -26,6 +27,7 @@ export default function BooksImagies({ data }) {
   return (
     <Layout>
       <div>
+        <ScrollMe />
         <Img fluid={sources[0]} />
         <Img fluid={sources[1]} />
         <Img fluid={sources[2]} />
@@ -50,105 +52,105 @@ export const query = graphql`
   query {
     image1: file(relativePath: { eq: "images/1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image2: file(relativePath: { eq: "images/2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image3: file(relativePath: { eq: "images/3.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image4: file(relativePath: { eq: "images/4.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image5: file(relativePath: { eq: "images/5.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image6: file(relativePath: { eq: "images/6.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image7: file(relativePath: { eq: "images/7.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image8: file(relativePath: { eq: "images/8.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image9: file(relativePath: { eq: "images/9.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image10: file(relativePath: { eq: "images/10.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image11: file(relativePath: { eq: "images/11.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image12: file(relativePath: { eq: "images/12.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image13: file(relativePath: { eq: "images/13.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image14: file(relativePath: { eq: "images/14.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image15: file(relativePath: { eq: "images/15.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
