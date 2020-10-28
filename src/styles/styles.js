@@ -2,11 +2,12 @@ import styled from "styled-components"
 import { rhythm } from "../utils/typography"
 
 export const Wrapper = styled.div`
-  margin: 0 auto;
-  max-width: 700px;
-  padding: ${rhythm(2)};
+  margin: auto;
+  max-width: 1700px;
+  height: 1000px;
+  padding: ${rhythm(1.5)};
   padding-top: ${rhythm(1.5)};
-  background-image: url("../static/bg.jpg");
+  background-image: url("/images/bg.jpg");
 
   background-color: ${({ theme }) =>
     theme === "light" ? "#f2eecb" : "#000"}; // #f2eecb old paper
