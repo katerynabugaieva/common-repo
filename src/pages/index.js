@@ -39,21 +39,8 @@ export default function Home({ data }) {
                     margin-bottom: ${rhythm(1 / 4)};
                   `}
                 >
-                  {node.frontmatter.title}{" "}
-                  <span
-                    css={css`
-                      color: #555;
-                      font-size: 10px;
-                    `}
-                  ></span>
+                  {node.frontmatter.title}
                 </h5>
-                <p
-                  css={css`
-                    margin: 0;
-                  `}
-                >
-                  {node.frontmatter.comment}
-                </p>
               </Link>
               <Divider />
             </div>

@@ -18,12 +18,13 @@ export default function Layout({ children }) {
   return (
     <div
       css={css`
-    margin: 0 auto;
-    max-width: 700px;
-    padding: ${rhythm(2)};
-    padding-top: ${rhythm(1.5)};
-          `}
+        margin: 0 auto;
+        max-width: 700px;
+        padding: ${rhythm(2)};
+        padding-top: ${rhythm(1.5)};
+      `}
     >
+
       <Link to={`/`}>
         <h4
           css={css`
@@ -35,7 +36,10 @@ export default function Layout({ children }) {
           {data.site.siteMetadata.title}
         </h4>
       </Link>
+
       {children}
+
+
     </div>
   )
 }

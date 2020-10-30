@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.button`
+export const ThemeToggleWrapper = styled.button`
   background: none;
   border: none;
   cursor: pointer;
