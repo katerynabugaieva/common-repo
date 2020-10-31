@@ -20,6 +20,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+          path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
@@ -32,7 +41,7 @@ module.exports = {
         short_name: `S.`,
         start_url: `/`,
         display: `standalone`,
-        icon: `static/logo.png`
+        icon: `static/logo.png`,
       },
     },
   ],
