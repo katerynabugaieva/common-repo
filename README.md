@@ -23,6 +23,6 @@ ship of theseus
 
 ## 💫 Deploy
 
-[![Look at netify](https://www.netlify.com/img/deploy/button.svg)](https://tasty-tasty-app.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f5cca3bf-ddf5-4316-a493-b1c6324580ce/deploy-status)](https://app.netlify.com/sites/ship-of-theseus/deploys)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
