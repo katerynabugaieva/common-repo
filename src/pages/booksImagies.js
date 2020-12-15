@@ -1,8 +1,7 @@
-import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import React from "react"
 import Layout from "../components/layout"
-import ScrollMe from "../components/scrollToTheTop"
 
 export default function BooksImagies({ data }) {
   console.log(data)
@@ -27,7 +26,6 @@ export default function BooksImagies({ data }) {
   return (
     <Layout>
       <div>
-        <ScrollMe />
         <Img fixed={sources[0]} />
         <Img fixed={sources[1]} />
         <Img fixed={sources[2]} />
