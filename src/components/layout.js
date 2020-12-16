@@ -5,7 +5,7 @@ import { ThemeContext } from "../providers/ThemeProvider"
 import { Wrapper } from "../styles/styles"
 import { rhythm } from "../utils/typography"
 import ToggleTheme from "./theme/ToggleTheme"
-
+import ScrollMe from "./scrollToTheTop"
 
 export default function Layout({ children }) {
   const data = useStaticQuery(
@@ -24,6 +24,7 @@ export default function Layout({ children }) {
     <div>
       <Wrapper theme={theme}>
         <ToggleTheme />
+        <ScrollMe />
 
         <Link to={`/`}>
           <h4
