@@ -1,8 +1,8 @@
 <h1 align="center">
-  Книга рецептов
+ship of theseus
 </h1>
 
-Тут будут храниться записки о рецептах, которые мне жалко потерять
+
 
 ## 🚀 Quick start
 
@@ -11,7 +11,7 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd recipe-book/
+    cd s_repo/
     gatsby develop
     ```
 
