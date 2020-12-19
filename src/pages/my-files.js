@@ -6,7 +6,6 @@ export default function MyFiles({ data }) {
   console.log(data)
   return (
     <Layout>
-      aaa
       <div>
         <h1>My Site's Files</h1>
         <table>

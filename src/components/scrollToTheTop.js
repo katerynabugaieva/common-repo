@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { rhythm } from "../utils/typography"
 
-const Scroller = styled.button`
+const Scroll = styled.button`
   // display: none;
   position: fixed;
   bottom: 20px;
@@ -19,8 +19,24 @@ const Scroller = styled.button`
    background-color: none;
 `
 
-const ScrollMe = ({}) => {
-  var button = document.getElementById("myBtn")
+const ScrollMe = () => {
+  function topFunction() {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
+
+  return (
+    <Scroll onClick={topFunction} id="myBtn">
+      &uarr;
+    </Scroll>
+  )
+}
+export default ScrollMe
+
+
+/*
+
+ var button = document.getElementById("myBtn")
   window.onscroll = function () {
    // scrollFunction()
   }
@@ -35,16 +51,4 @@ const ScrollMe = ({}) => {
       button.style.display = "none"
     }
   }
-
-  function topFunction() {
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
-  }
-
-  return (
-    <Scroller onClick={topFunction} id="myBtn">
-      &uarr;
-    </Scroller>
-  )
-}
-export default ScrollMe
+*/
