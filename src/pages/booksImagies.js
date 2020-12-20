@@ -8,41 +8,41 @@ export default function BooksImagies({ data }) {
   console.log(data)
 
   const sources = [
-    data.image1.childImageSharp.fluid,
-    data.image2.childImageSharp.fluid,
-    data.image3.childImageSharp.fluid,
-    data.image4.childImageSharp.fluid,
-    data.image5.childImageSharp.fluid,
-    data.image6.childImageSharp.fluid,
-    data.image7.childImageSharp.fluid,
-    data.image8.childImageSharp.fluid,
-    data.image9.childImageSharp.fluid,
-    data.image10.childImageSharp.fluid,
-    data.image11.childImageSharp.fluid,
-    data.image12.childImageSharp.fluid,
-    data.image13.childImageSharp.fluid,
-    data.image14.childImageSharp.fluid,
-    data.image15.childImageSharp.fluid,
+    data.image1.childImageSharp.fixed,
+    data.image2.childImageSharp.fixed,
+    data.image3.childImageSharp.fixed,
+    data.image4.childImageSharp.fixed,
+    data.image5.childImageSharp.fixed,
+    data.image6.childImageSharp.fixed,
+    data.image7.childImageSharp.fixed,
+    data.image8.childImageSharp.fixed,
+    data.image9.childImageSharp.fixed,
+    data.image10.childImageSharp.fixed,
+    data.image11.childImageSharp.fixed,
+    data.image12.childImageSharp.fixed,
+    data.image13.childImageSharp.fixed,
+    data.image14.childImageSharp.fixed,
+    data.image15.childImageSharp.fixed,
   ]
   return (
     <Layout>
       <div>
         <ScrollMe />
-        <Img fluid={sources[0]} />
-        <Img fluid={sources[1]} />
-        <Img fluid={sources[2]} />
-        <Img fluid={sources[3]} />
-        <Img fluid={sources[4]} />
-        <Img fluid={sources[5]} />
-        <Img fluid={sources[6]} />
-        <Img fluid={sources[7]} />
-        <Img fluid={sources[8]} />
-        <Img fluid={sources[9]} />
-        <Img fluid={sources[10]} />
-        <Img fluid={sources[11]} />
-        <Img fluid={sources[12]} />
-        <Img fluid={sources[13]} />
-        <Img fluid={sources[14]} />
+        <Img fixed={sources[0]} />
+        <Img fixed={sources[1]} />
+        <Img fixed={sources[2]} />
+        <Img fixed={sources[3]} />
+        <Img fixed={sources[4]} />
+        <Img fixed={sources[5]} />
+        <Img fixed={sources[6]} />
+        <Img fixed={sources[7]} />
+        <Img fixed={sources[8]} />
+        <Img fixed={sources[9]} />
+        <Img fixed={sources[10]} />
+        <Img fixed={sources[11]} />
+        <Img fixed={sources[12]} />
+        <Img fixed={sources[13]} />
+        <Img fixed={sources[14]} />
       </div>
     </Layout>
   )
@@ -52,106 +52,106 @@ export const query = graphql`
   query {
     image1: file(relativePath: { eq: "images/1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image2: file(relativePath: { eq: "images/2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image3: file(relativePath: { eq: "images/3.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image4: file(relativePath: { eq: "images/4.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image5: file(relativePath: { eq: "images/5.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image6: file(relativePath: { eq: "images/6.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image7: file(relativePath: { eq: "images/7.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image8: file(relativePath: { eq: "images/8.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image9: file(relativePath: { eq: "images/9.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image10: file(relativePath: { eq: "images/10.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image11: file(relativePath: { eq: "images/11.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image12: file(relativePath: { eq: "images/12.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image13: file(relativePath: { eq: "images/13.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image14: file(relativePath: { eq: "images/14.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     image15: file(relativePath: { eq: "images/15.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 250, height: 250) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
