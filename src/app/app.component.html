@@ -279,15 +279,5 @@
 </div>
 
 <footer>
-  <ng-container *ngFor="let language of languageList">
-    <a href="/{{ language.code }}/">
-      <button class="button">{{ language.label }}</button>
-    </a></ng-container
-  >
-  <div class="dropup">
-    <button class="dropbtn" i18n="@@language">Language</button>
-    <div class="dropup-content">
-      <li *ngFor="let language of languageList">{{ language.label }}</li>
-    </div>
-  </div>
+
 </footer>
