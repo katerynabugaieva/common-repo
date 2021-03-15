@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -117,6 +120,14 @@
             "production": {
               "devServerTarget": "nextmarket:serve:production"
             }
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/nextmarket",
+            "netlifyToken": "ruAQ-LSvFuwl6_hLhvjpATI9rcl1_N9Fb3AVsLpuI_c",
+            "siteId": "3a20b10e-c088-482f-a709-8c69f0ccc1e3"
           }
         }
       }
