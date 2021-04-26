@@ -1,0 +1,18 @@
+h1 {
+  margin-top: 20px;
+  --lato-font: "lato";
+  --kabel-font: "NeueKabelW01";
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  hyphens: manual;
+  box-sizing: border-box;
+  margin: 0.67em 0;
+  color: #000;
+  letter-spacing: 0.1pt;
+  font-family: lato;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 34px;
+  width: auto;
+  opacity: 1;
+}
