@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          repo 1
+          repo 1 that has been updated
         </a>
       </header>
     </div>
